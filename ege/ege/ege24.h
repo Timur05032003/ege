@@ -6,4 +6,6 @@ namespace ege24
 
 	// calculate factorial
 	int factorial(int const number);
+
+	void task27686();
 }

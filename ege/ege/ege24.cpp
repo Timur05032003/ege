@@ -39,3 +39,36 @@ void ege24::task27421()
 	}
 	cout << max;
 }
+
+void ege24::task27686()
+{
+	string const text = "xxxzzxx";
+	int max = 0;
+	int count = 0;
+
+	for (int i = 0; i < text.length(); ++i)
+	{
+		bool flag = false;
+		
+		if (text[i] == 'x')
+		{
+			++count;
+		}
+		else
+		{
+			flag = true;
+		}
+
+		if (flag || i == text.length() - 1)
+		{
+			if (count > max)
+			{
+				max = count;
+			}
+			count = 0;
+		}
+	}
+	cout << max;
+}
+
+void ege24::task27689()
