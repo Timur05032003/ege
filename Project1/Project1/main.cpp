@@ -1,18 +1,25 @@
 #include <iostream>
-#include <fstream>
+#include <vector>
 
 using namespace std;
 
+void bubbleSort(int* array, int const size)
+{
+
+}
+
+void task()
+{
+
+}
+
 int main()
 {
-	fstream fin("24_demo.txt");
+	int x[3] = {1, 2, 3};
 
-	while (!fin.eof())
+	for (int i = 0; i < 3; ++i)
 	{
-		char symbol = '\0';
-		fin >> symbol;
-		cout << symbol;
+		cout << *(x + i) << " ";
 	}
-
 	return 0;
 }
